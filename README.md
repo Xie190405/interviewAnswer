@@ -18,11 +18,11 @@
 @Select("select g.* from cy_goods g \n" +
             "inner join cy_goods_sku k on g.id=k.goods_id \n" +
             "left join cy_city_categories cc on cc.categories_id = g.cate_id\n" +
-            "where cc.city_id = #{cityID}\n" +
+            "where cc.city_id = #{cityId}\n" +
             "order by cc.level\n" +
             "limit #{limit},#{size}")
             
-List<CyGoods> getGoods(@Param("cityID") Integer cityID, @Param("limit") Integer limit, @Param("size") Integer size);
+List<CyGoods> getGoods(@Param("cityID") Integer cityId, @Param("limit") Integer limit, @Param("size") Integer size);
 
 然后前端发送请求:
 先通过腾讯地图相关定位组件获取用户当前位置定位，再将得到的定位信息中的行政区号拿到
