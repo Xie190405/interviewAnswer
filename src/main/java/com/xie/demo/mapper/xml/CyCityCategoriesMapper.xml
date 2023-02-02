@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xie.demo.mapper.CyCityCategoriesMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xie.demo.model.CyCityCategories">
+        <id column="id" property="id" />
+        <result column="city_id" property="cityId" />
+        <result column="categories_id" property="categoriesId" />
+        <result column="level" property="level" />
+        <result column="desc" property="desc" />
+    </resultMap>
+
+</mapper>

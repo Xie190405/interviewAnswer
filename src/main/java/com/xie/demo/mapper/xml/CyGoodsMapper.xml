@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xie.demo.mapper.CyGoodsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xie.demo.model.CyGoods">
+        <id column="id" property="id" />
+        <result column="goods_name" property="goodsName" />
+        <result column="cate_id" property="cateId" />
+        <result column="price" property="price" />
+        <result column="original" property="original" />
+        <result column="tags" property="tags" />
+        <result column="content" property="content" />
+        <result column="summary" property="summary" />
+        <result column="is_sale" property="isSale" />
+        <result column="created_at" property="createdAt" />
+        <result column="updated_at" property="updatedAt" />
+    </resultMap>
+
+</mapper>
